@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Advanced Todo List</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+      </header>
+
+      <!-- Add Task Section -->
+      <section id="addTaskSection">
+        <input type="text" id="taskTitle" placeholder="Task Title" />
+        <input type="date" id="taskDueDate" />
+        <select id="taskPriority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <textarea id="taskNotes" placeholder="Notes..."></textarea>
+        <button id="addTaskBtn">Add Task</button>
+      </section>
+
+      <!-- Filter Section -->
+      <section id="filterSection">
+        <input type="text" id="searchTasks" placeholder="Search tasks..." />
+        <select id="filterPriority">
+          <option value="" >All Priorities</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <!-- Sort by Date -->
+        <select id="sortByDate">
+          <option value="">Sort by Date</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+        <button id="exportTasksBtn">Export Tasks as PDF</button>
+      </section>
+
+      <!-- Task List -->
+      <section id="taskListContainer">
+        <div id="taskCategories">
+           <!-- <div
+            class="task low"
+            draggable="true"
+            data-index="0"
+            onclick="console.log(getAttribute('data-index'))"
+          >
+            <p>js - Due: 9/19/2024</p>
+            <div>
+              <button class="c-ompletebtn">Complete</button>
+              <button class="delete-btn">Delete</button>
+            </div>
+          </div>
+          <div
+            class="task medium"
+            draggable="true"
+            data-index="1"
+            onclick="console.log(getAttribute('data-index'))"
+          >
+            <p>js - Due: 9/19/2024</p>
+            <div>
+              <button class="complete-btn">Complete</button>
+              <button class="delete-btn">Delete</button>
+            </div> -->
+          </div> 
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js" integrity="sha512-ad3j5/L4h648YM/KObaUfjCsZRBP9sAOmpjaT2BDx6u9aBrKFp7SbeHykruy83rxfmG42+5QqeL/ngcojglbJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

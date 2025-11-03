@@ -1,0 +1,5 @@
+# نادیده گرفتن فایل های HTML در محاسبه درصد
+*.html linguist-vendored
+
+# نادیده گرفتن فایل های CSS در محاسبه درصد
+*.css linguist-vendored
